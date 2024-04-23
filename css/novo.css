@@ -1,0 +1,116 @@
+/* Personalizações do Bootstrap para a loja de eletrônicos */
+
+/* Variáveis de cores para temas claro e escuro */
+:root {
+  --cor-de-fundo-claro: #f4f4f4;
+  --cor-de-fundo-escuro: #212529;
+  --cor-de-texto-claro: #212529;
+  --cor-de-texto-escuro: #f8f9fa;
+  --cor-de-link-claro: #007bff;
+  --cor-de-link-escuro: #8ab4f8;
+  --cor-de-borda-claro: #ced4da;
+  --cor-de-borda-escuro: #495057;
+}
+
+/* Estilos padrão */
+body {
+  background-color: var(--cor-de-fundo-claro);
+  color: var(--cor-de-texto-claro);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--cor-de-link-claro);
+  transition: color 0.3s;
+}
+
+.container {
+  border: 1px solid var(--cor-de-borda-claro);
+  transition: border-color 0.3s;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-de-link-claro);
+  color: var(--cor-de-texto-escuro);
+  padding: 2rem 0;
+}
+
+/* Títulos dos produtos */
+.card-title {
+  color: var(--cor-de-link-claro);
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #ff4500;
+  border-color: #ff4500;
+}
+
+.btn-primary:hover {
+  background-color: #c03600;
+  border-color: #c03600;
+}
+
+/* Cards de produtos */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagens dos produtos */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* Modal */
+.modal-content {
+  padding: 2rem;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--cor-de-borda-claro);
+}
+
+.modal-title {
+  color: var(--cor-de-link-claro);
+}
+
+.btn-close {
+  color: var(--cor-de-texto-claro);
+  opacity: 1;
+}
+
+/* Adaptações para dispositivos móveis */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+}
+
+/* Tema Escuro */
+body.dark-mode {
+  background-color: var(--cor-de-fundo-escuro);
+  color: var(--cor-de-texto-escuro);
+}
+
+body.dark-mode a {
+  color: var(--cor-de-link-escuro);
+}
+
+body.dark-mode .container {
+  border-color: var(--cor-de-borda-escuro);
+}
+
+body.dark-mode .btn-close {
+  color: var(--cor-de-texto-escuro);
+}
+
+body.dark-mode header {
+  background-color: var(--cor-de-fundo-escuro);
+}

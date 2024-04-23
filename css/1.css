@@ -1,0 +1,68 @@
+body.dark-mode {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #353535;
+    color: white;
+}
+
+header,
+footer {
+    background: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img {
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-dark-mode,
+.nav-btn-light {
+    background-color: #ff8c00;
+    /* Orange for dark mode */
+    color: white;
+}
+
+.btn-dark-mode:hover,
+.nav-btn-light:hover {
+    background-color: #e67600;
+    /* Darker orange on hover */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+}

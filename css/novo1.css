@@ -1,0 +1,105 @@
+/* Personalizações do Bootstrap para a loja de eletrônicos */
+
+/* Variáveis de cores para temas claro e escuro */
+:root {
+  --cor-de-fundo-claro: #f4f4f4;
+  --cor-de-fundo-escuro: #000000;
+  --cor-de-texto-claro: #000000;
+  --cor-de-texto-escuro: #ffffff;
+  --cor-de-link-claro: #0000ff;
+  --cor-de-link-escuro: #ffffff;
+  --cor-de-borda-claro: #000000;
+  --cor-de-borda-escuro: #ffffff;
+}
+
+/* Estilos padrão */
+body {
+  background-color: var(--cor-de-fundo-claro);
+  color: var(--cor-de-texto-claro);
+}
+
+a {
+  color: var(--cor-de-link-claro);
+}
+
+.container {
+  border: 1px solid var(--cor-de-borda-claro);
+}
+
+/* Cabeçalho */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 2rem 0;
+}
+
+/* Títulos dos produtos */
+.card-title {
+  color: #007bff;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #ff4500;
+  border-color: #ff4500;
+}
+
+.btn-primary:hover {
+  background-color: #c03600;
+  border-color: #c03600;
+}
+
+/* Cards de produtos */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagens dos produtos */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* Modal */
+.modal-content {
+  padding: 2rem;
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  color: #007bff;
+}
+
+.btn-close {
+  color: #6c757d;
+  opacity: 1;
+}
+
+/* Adaptações para dispositivos móveis */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+}
+
+/* Tema Escuro */
+body[data-theme="dark"] {
+  background-color: var(--cor-de-fundo-escuro);
+  color: var(--cor-de-texto-escuro);
+}
+
+body[data-theme="dark"] a {
+  color: var(--cor-de-link-escuro);
+}
+
+body[data-theme="dark"] .container {
+  border-color: var(--cor-de-borda-escuro);
+}
